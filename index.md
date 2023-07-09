@@ -23,17 +23,26 @@ RL4F provides a way to bootstrap LLM performance on a task without needing to tr
 
 ### How to use natural language critiques in model outputs?
 We use few-shot prompt when we first sample an initial prediction and when we prompt the model to revise its the answer using the critique.
+
+
 ### RL4F: Training the critique model
 Having sampled a critique utterance from the critique model we prompt the task model for a revision. We compare the revision to a ground truth output (e.g. human-written summary for the summarization task). We use automatic metrics to quantify the quality of the revision and use that as a reward signal.
+
+
 ### Applying RL4F iteratively
 At evaluation, we sample critiques from the critique model iteratively and observe improvements for alphabetization task.
+
+
 ### Scaling RL4F
 Our default critique model is a fine-tuned T5-large checkpoint by default. We conduct experiments usind differently-sized T5 models and find that increasing the model size increase the end-task performance.
+
+
 ### Results
 RL4F yields improvements over retrieval-based, self-refinement and supervised baselines. Check out the paper for descriptions of these baselines and the appendix for a comparison to subsequent works such as [Self-Refine](https://arxiv.org/abs/2303.17651).
+
+
 ### Sample critiques from RL4F
-
-
+Below are some examples where RL4F critiques were useful. There are also examples when the revised answer is not better than the initial answer even though the critiques were reasonable.
 
 ```
 @article{akyurek2023rl4f,
