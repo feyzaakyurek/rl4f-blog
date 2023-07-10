@@ -2,15 +2,11 @@
   <img src="new_method_image.jpg" alt="drawing" width="800"/>
 </p>
 
-## Abstract
+*Afra Feyza Akyürek, Ekin Akyürek, Aman Madaan, Ashwin Kalyan, Peter Clark, Derry Wijaya, Niket Tandon* to appear at ACL 2023.
 
-Despite their unprecedented success, even the largest language models make mistakes. Similar to how humans learn and improve using feedback, previous work proposed providing language models with natural language feedback to guide them in repairing their outputs. Because human-generated critiques are expensive to obtain, researchers have devised learned critique generators in lieu of human critics while assuming one can train downstream models to utilize generated feedback. However, this approach does not apply to black-box or limited access models such as ChatGPT, as they cannot be fine-tuned. Moreover, in the era of large general-purpose language agents, fine-tuning is neither computationally nor spatially efficient as it results in multiple copies of the network. In this work, we introduce RL4F (Reinforcement Learning for Feedback), a multi-agent collaborative framework where the critique generator is trained to maximize end-task performance of GPT-3, a fixed model more than 200 times its size. RL4F produces critiques that help GPT-3 revise its outputs. We study three datasets for action planning, summarization and alphabetization and show improvements (~5% on average) in multiple text similarity metrics over strong baselines across all three tasks.
+Link to the paper: [https://arxiv.org/abs/2305.08844](https://arxiv.org/abs/2305.08844)
 
-*Afra Feyza Akyürek, Ekin Akyürek, Aman Madaan, Ashwin Kalyan, Peter Clark, Derry Wijaya, Niket Tandon*, ACL 2023
-
-Link to paper: https://arxiv.org/abs/2305.08844
-
-Code: https://github.com/feyzaakyurek/rl4f
+Code: [https://github.com/feyzaakyurek/rl4f](https://github.com/feyzaakyurek/rl4f)
 
 ## Motivation
 
@@ -56,10 +52,18 @@ RL4F yields improvements over retrieval-based, self-refinement and supervised ba
 
 
 ### Sample critiques from RL4F
-Below are some examples where RL4F critiques were useful. There are also examples when the revised answer is not better than the initial answer even though the critiques were reasonable.
+Below are some examples from the appendix in the paper where RL4F critiques were useful. There are also examples when the revised answer is not better than the initial answer even though the critiques were reasonable.
+
+**Samples for Action Planning**
 
 ![image](action_planning_samples.png)
+
+**Samples for Alphabetization**
+
 ![image](alphabetization_samples.png)
+
+**Samples for Summarization**
+
 ![image](summarization_samples.png)
 
 ```
