@@ -67,10 +67,20 @@ Below are some examples from the appendix in the paper where RL4F critiques were
 ![image](summarization_samples.png)
 
 ```
-@article{akyurek2023rl4f,
-  title={RL4F: Generating Natural Language Feedback with Reinforcement Learning for Repairing Model Outputs},
-  author={Aky{\"u}rek, Afra Feyza and Aky{\"u}rek, Ekin and Madaan, Aman and Kalyan, Ashwin and Clark, Peter and Wijaya, Derry and Tandon, Niket},
-  journal={arXiv preprint arXiv:2305.08844},
-  year={2023}
+@inproceedings{akyurek-etal-2023-rl4f,
+    title = "{RL}4{F}: {G}enerating Natural Language Feedback with Reinforcement Learning for Repairing Model Outputs",
+    author = "Akyurek, Afra Feyza  and
+      Akyurek, Ekin  and
+      Kalyan, Ashwin  and
+      Clark, Peter  and
+      Wijaya, Derry Tanti  and
+      Tandon, Niket",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.427",
+    pages = "7716--7733"
 }
 ```
